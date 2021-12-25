@@ -1,0 +1,28 @@
+{
+    "name": "Mood Tracker",
+    "description": "Track your mood each day",
+    "version": "0.1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/assets/logo.png",
+            "32": "/assets/logo.png",
+            "48": "/assets/logo.png",
+            "128": "/assets/logo.png"
+        }
+    },
+
+    "icons": {
+        "16": "/assets/logo.png",
+        "32": "/assets/logo.png",
+        "48": "/assets/logo.png",
+        "128": "/assets/logo.png"
+      }
+    
+
+}

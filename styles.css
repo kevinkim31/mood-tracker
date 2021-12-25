@@ -1,0 +1,23 @@
+button {
+    background-color: #f4f4f4;
+    color: #2f9763;
+    height: 60px;
+    width: 100px;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 70%;
+    margin:5px auto;
+    display:block;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #b7beb7; 
+    color: #2f9763;
+  }
+
+button.click{
+    height: 0px;
+    width: 0px;
+}
