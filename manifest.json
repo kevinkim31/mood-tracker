@@ -4,7 +4,7 @@
     "version": "0.1.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "popup.js"
     },
     "permissions": ["storage"],
     "action": {
