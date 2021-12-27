@@ -5,9 +5,6 @@ chrome.storage.sync.get(['year'], function(result) {
     urmom.innerHTML = "" + result.year;
 });
 
-console.log('Current Year:', currYear);
-console.log(currDate.toString());
-
 // ON HOVER FUNCTION
 */
 
