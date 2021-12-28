@@ -5,74 +5,49 @@ chrome.storage.sync.get(['year'], function(result) {
     var updateMonth = updateDate.getMonth();
     var updateDay = updateDate.getDate();
 
-    var buttonMonth = "";
+    var buttonDay = "day";
 
-    if (updateMonth == 0)
+    for (let count = 1; count <= 31; count++)
     {
-        buttonMonth = "jan";
+        if (updateDay == count)
+        {
+            buttonDay = buttonDay + count; 
+        }
     }
-    else if (updateMonth == 1)
-    {
-        buttonMonth = "feb";
-    }
-    else if (updateMonth == 2)
-    {
-        buttonMonth = "mar";
-    }
-    else if (updateMonth == 3)
-    {
-        buttonMonth = "apr";
-    }
-    else if (updateMonth == 4)
-    {
-        buttonMonth = "may";
-    }
-    else if (updateMonth == 5)
-    {
-        buttonMonth = "jun";
-    }
-    else if (updateMonth == 6)
-    {
-        buttonMonth = "jul";
-    }
-    else if (updateMonth == 7)
-    {
-        buttonMonth = "aug";
-    }
-    else if (updateMonth == 8)
-    {
-        buttonMonth = "sep";
-    }
-    else if (updateMonth == 9)
-    {
-        buttonMonth = "oct";
-    }
-    else if (updateMonth == 10)
-    {
-        buttonMonth = "nov";
-    }
-    else
-    {
-        buttonMonth = "dec";
-    }
+
+
+    var tableDay = document.getElementById("calendarTable").rows.namedItem(buttonDay).cells;
+
+    chrome.storage.sync.get(['currButton'], function(result1) {
+
+        if (result1.currButton == 1)
+        {
+            tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#9dc36c";
+        }
+        else if (result1.currButton == 2)
+        {
+            tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#76a53d";
+        }
+        else if (result1.currButton == 3)
+        {
+            tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#537926";
+        }
+        else if (result1.currButton == 4)
+        {
+            tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#3b4723";
+        }
+        else if (result1.currButton == 5)
+        {
+            tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#242714";
+        }
+    
+        
+    });
+
 
 
      var urmum = document.querySelector("#title");
      urmum.innerHTML = "Your " + result.year + "<br />" + "So Far";
-
-    var hello = document.getElementsByClassName(buttonMonth);
-
-    var test = document.querySelector("#wuttest");
-    //test.innerHTML = buttonMonth;
-
-    var i;
-
-    function changeColor(){
-        for (i = 0; i < hello.length; i++)
-        {
-            hello[i].style.backgroundColor = "#9dc36c";
-        }
-    }
     
 
 });
