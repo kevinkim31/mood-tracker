@@ -1,7 +1,7 @@
 body {
     background-color: #b1bea1;
     color: #35381d;
-    height: 550px;
+    height: 500px;
     width: 316px;
 }
 
@@ -22,13 +22,19 @@ button:hover {
     transition-duration: 0.2s;
 }
 
+.text {
+    float:left;
+    text-align: left;
+    font-size:x-large;
+}
+
 h2 {
     text-align: center;
     color: #35381d;
 }
 
 div {
-    position: center;
+    float: right;
     text-align: center;
 }
 
@@ -36,6 +42,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    
 }
 
 tr, td {
