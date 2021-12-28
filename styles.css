@@ -18,10 +18,17 @@ h2 {
     color: #35381d;
 }
 
+h3 {
+    text-align: center;
+    color: #35381d;
+    margin: 0 auto;
+}
+
 #plant {
     padding-top: 5px;
     padding-left: 50px;
 }
+
 .B {
     transition-duration: 0.7s;
     height: 40px;
@@ -33,6 +40,7 @@ h2 {
     margin-left: 3px;
     
 }
+
 .B:hover {
     transform: scale(1.19);
     transition-duration: 0.2s;
@@ -57,9 +65,4 @@ h2 {
 
 #B5 {
     background-color:#242714
-}
-
-#mood {
-    text-align: center;
-    margin: 0 auto;
 }

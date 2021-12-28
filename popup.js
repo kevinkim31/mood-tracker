@@ -18,17 +18,12 @@ chrome.storage.sync.get(['year'], function(result) {
             
             var currButton = document.getElementById(updateDay).getElementsByClassName(updateMonth + 1);
             currButton.style.bgcolor = '#9dc36c';
-    
 
         }
         */
 
         chrome.storage.sync.set({currButton:1});
         window.location.href = 'calendar.html';
-        
-
-   
-
 
     });
     
@@ -60,7 +55,6 @@ chrome.storage.sync.get(['year'], function(result) {
 
 // ON HOVER FUNCTION
 
-
 window.onload = function() {
     document.getElementById("B1").onmouseover = function() { hover1() };
     document.getElementById("B2").onmouseover = function() { hover2() };
@@ -76,7 +70,7 @@ window.onload = function() {
 
     function hover1() {
         document.getElementById("plant").src="assets/plant1.png";
-        document.getElementById("mood").innerHTML = "bless";
+        document.getElementById("mood").innerHTML = "fantastic";
     }
 
     function hover2() {
@@ -86,7 +80,7 @@ window.onload = function() {
 
     function hover3() {
         document.getElementById("plant").src="assets/plant3.png";
-        document.getElementById("mood").innerHTML = "empty";
+        document.getElementById("mood").innerHTML = "bored";
     }
 
     function hover4() {
@@ -96,7 +90,7 @@ window.onload = function() {
 
     function hover5() {
         document.getElementById("plant").src="assets/plant5.png";
-        document.getElementById("mood").innerHTML = "tragic";
+        document.getElementById("mood").innerHTML = "miserable";
     }
 
     function mouseout() {
@@ -104,9 +98,3 @@ window.onload = function() {
         document.getElementById("mood").innerHTML = "&nbsp;";
     }
 }
-
-
-
-
-
-
