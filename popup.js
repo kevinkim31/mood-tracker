@@ -1,6 +1,5 @@
 // DATE
 
-
 chrome.storage.sync.get(['year'], function(result) {
 
     document.querySelector("#B1").addEventListener('click', ()=> {

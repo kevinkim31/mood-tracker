@@ -1,33 +1,41 @@
 body {
     background-color: #b1bea1;
+    color: #35381d;
     height: 550px;
     width: 316px;
 }
 
 button {
-    height: 10px;
-    width: 5px;
+    height: 12px;
+    width: 10px;
     background-color: #dfe0dd;
     float: none;
     outline: none;
     border: none;
-    border-radius: 30%;
+    border-radius: 50%;
     margin: none;
     transition-duration: 0.7s;
 }
 
 button:hover {
-    
     transform: scale(1.19);
     transition-duration: 0.2s;
-    
 }
 
-body{
-    columns: 13;
+h2 {
+    text-align: center;
+    color: #35381d;
 }
 
+div {
+    text-align: center;
+}
 
 .disable {
     background-color: #b1bea1;
+}
+
+#chart {
+    columns: 13;
+    column-width: 12px;
 }

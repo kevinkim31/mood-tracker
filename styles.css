@@ -24,11 +24,6 @@ h3 {
     margin: 0 auto;
 }
 
-#plant {
-    padding-top: 5px;
-    padding-left: 50px;
-}
-
 .B {
     transition-duration: 0.7s;
     height: 40px;
@@ -44,6 +39,11 @@ h3 {
 .B:hover {
     transform: scale(1.19);
     transition-duration: 0.2s;
+}
+
+#plant {
+    padding-top: 5px;
+    padding-left: 50px;
 }
 
 #B1 {
