@@ -52,3 +52,15 @@ tr, td {
 .disable {
     background-color: #b1bea1;
 }
+
+.hoverDate {
+    float:left;
+    text-align: left;
+    font-size: medium;
+}
+
+.hoverMood {
+    float:left;
+    text-align: left;
+    font-size: small;
+}
