@@ -1,0 +1,33 @@
+body {
+    background-color: #b1bea1;
+    height: 550px;
+    width: 316px;
+}
+
+button {
+    height: 10px;
+    width: 5px;
+    background-color: #dfe0dd;
+    float: none;
+    outline: none;
+    border: none;
+    border-radius: 30%;
+    margin: none;
+    transition-duration: 0.7s;
+}
+
+button:hover {
+    
+    transform: scale(1.19);
+    transition-duration: 0.2s;
+    
+}
+
+body{
+    columns: 13;
+}
+
+
+.disable {
+    background-color: #b1bea1;
+}
