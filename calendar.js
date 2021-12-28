@@ -23,6 +23,14 @@ chrome.storage.sync.get(['year'], function(result) {
         if (result1.currButton == 1)
         {
             tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#9dc36c";
+
+            var milf = document.querySelector("#hoverMood");
+            var dilf = document.querySelector("hoverDate");
+
+            milf.innerHTML = "Fantastic";
+            var hi = tableDay[updateMonth+1].getElementsByTagName("Button")[0].id;
+            dilf.innerHTML = "" + hi;
+
         }
         else if (result1.currButton == 2)
         {
@@ -39,6 +47,10 @@ chrome.storage.sync.get(['year'], function(result) {
         else if (result1.currButton == 5)
         {
             tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#242714";
+        }
+        else
+        {
+
         }
     
         
