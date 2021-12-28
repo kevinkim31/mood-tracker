@@ -1,91 +1,42 @@
 // DATE
-chrome.storage.sync.get(['daily'], function(result) {
-    if (result.daily == "false")
-    {
-        chrome.storage.sync.get(['year'], function(result1) {
-        
-            document.querySelector("#B1").addEventListener('click', ()=> {
-        
-                chrome.storage.sync.set({currButton:1});
-                chrome.storage.sync.set({daily: "true"});
-                window.location.href = 'calendar.html';
+chrome.storage.sync.get(['year'], function(result1) {
 
-                var upDate = new Date();
-                var upDay = upDate.getDate();
-                chrome.storage.sync.set({currDay: upDay});
-        
-            });
-            
-            document.querySelector("#B2").addEventListener('click', ()=> {
-                chrome.storage.sync.set({currButton:2});
-                chrome.storage.sync.set({daily: "true"});
-                window.location.href = 'calendar.html';
+    document.querySelector("#B1").addEventListener('click', ()=> {
 
-                var upDate = new Date();
-                var upDay = upDate.getDate();
-                chrome.storage.sync.set({currDay: upDay});
-                
-            });
-            
-            document.querySelector("#B3").addEventListener('click', ()=> {
-                chrome.storage.sync.set({currButton:3});
-                chrome.storage.sync.set({daily: "true"});
-                window.location.href = 'calendar.html';
+        chrome.storage.sync.set({currButton:1});
+        window.location.href = 'calendar.html';
 
-                var upDate = new Date();
-                var upDay = upDate.getDate();
-                chrome.storage.sync.set({currDay: upDay});
-            });
-            
-            document.querySelector("#B4").addEventListener('click', ()=> {
-                chrome.storage.sync.set({currButton:4});
-                chrome.storage.sync.set({daily: "true"});
-                window.location.href = 'calendar.html';
-
-                var upDate = new Date();
-                var upDay = upDate.getDate();
-                chrome.storage.sync.set({currDay: upDay});
-            });
-            
-            document.querySelector("#B5").addEventListener('click', ()=> {
-                chrome.storage.sync.set({currButton:5});
-                chrome.storage.sync.set({daily: "true"});
-                window.location.href = 'calendar.html';
-
-                var upDate = new Date();
-                var upDay = upDate.getDate();
-                chrome.storage.sync.set({currDay: upDay});
-            });
-
-            // test
-            var urmom = document.querySelector("#yeartest");
-            urmom.innerHTML = "" + result1.year;
-        });
-    }
+    });
     
-    else
-    {
-        chrome.storage.sync.get(['currDay'], function(result2) {
-            var upDate1 = new Date();
-            var upDay1 = upDate1.getDate();
-
-            if (result2.currDay != upDay1)
-            {
-                chrome.storage.sync.set({currDay: upDay1});
-                chrome.storage.sync.set({daily: "false"});
-            }
-
-            else
-            {
-                window.location.href = 'calendar.html';
-            }
-            
-
-        });
-
-    }
+    document.querySelector("#B2").addEventListener('click', ()=> {
+        chrome.storage.sync.set({currButton:2});
+        window.location.href = 'calendar.html';
+        
+    });
     
-});
+    document.querySelector("#B3").addEventListener('click', ()=> {
+        chrome.storage.sync.set({currButton:3});
+        window.location.href = 'calendar.html';
+
+    });
+    
+    document.querySelector("#B4").addEventListener('click', ()=> {
+        chrome.storage.sync.set({currButton:4});
+        window.location.href = 'calendar.html';
+
+    });
+    
+    document.querySelector("#B5").addEventListener('click', ()=> {
+        chrome.storage.sync.set({currButton:5});
+        window.location.href = 'calendar.html';
+
+    });
+
+    // test
+    var urmom = document.querySelector("#yeartest");
+    urmom.innerHTML = "" + result1.year;
+});   
+
 
 // ON HOVER FUNCTION
 
