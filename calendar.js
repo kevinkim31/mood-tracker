@@ -9,51 +9,51 @@ chrome.storage.sync.get(['year'], function(result) {
 
     if (updateMonth == 0)
     {
-        buttonMonth = "jan"
+        buttonMonth = "jan";
     }
     else if (updateMonth == 1)
     {
-        buttonMonth = "feb"
+        buttonMonth = "feb";
     }
     else if (updateMonth == 2)
     {
-        buttonMonth = "mar"
+        buttonMonth = "mar";
     }
     else if (updateMonth == 3)
     {
-        buttonMonth = "apr"
+        buttonMonth = "apr";
     }
     else if (updateMonth == 4)
     {
-        buttonMonth = "may"
+        buttonMonth = "may";
     }
     else if (updateMonth == 5)
     {
-        buttonMonth = "jun"
+        buttonMonth = "jun";
     }
     else if (updateMonth == 6)
     {
-        buttonMonth = "jul"
+        buttonMonth = "jul";
     }
     else if (updateMonth == 7)
     {
-        buttonMonth = "aug"
+        buttonMonth = "aug";
     }
     else if (updateMonth == 8)
     {
-        buttonMonth = "sep"
+        buttonMonth = "sep";
     }
     else if (updateMonth == 9)
     {
-        buttonMonth = "oct"
+        buttonMonth = "oct";
     }
     else if (updateMonth == 10)
     {
-        buttonMonth = "nov"
+        buttonMonth = "nov";
     }
     else
     {
-        buttonMonth = "dec"
+        buttonMonth = "dec";
     }
 
 
@@ -61,10 +61,14 @@ chrome.storage.sync.get(['year'], function(result) {
     // urmum.innerHTML = "" + result.year;
 
     var hello = document.getElementsByClassName(buttonMonth);
+
+    var test = document.querySelector("#wuttest");
+    test.innerHTML = buttonMonth;
+
     var i;
 
     function changeColor(){
-        for (i =0; i < hello.length; i++)
+        for (i = 0; i < hello.length; i++)
         {
             hello[i].style.backgroundColor = "#9dc36c";
         }
