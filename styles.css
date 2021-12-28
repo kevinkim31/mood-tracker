@@ -1,6 +1,6 @@
 body {
     background-color: #b1bea1;
-    height: 400px;
+    height: 420px;
     width: 316px;
 }
 
@@ -33,7 +33,6 @@ h3 {
     border: none;
     border-radius: 30%;
     margin-left: 3px;
-    
 }
 
 .B:hover {
@@ -65,4 +64,14 @@ h3 {
 
 #B5 {
     background-color:#242714
+}
+
+#calendarnav {
+    float: right;
+}
+
+#calendarpage {
+    background-color: #d3e2c3;
+    height: 22px;
+    width: 22px;
 }
