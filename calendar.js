@@ -15,7 +15,6 @@ chrome.storage.sync.get(['year'], function(result) {
         }
     }
 
-
     var tableDay = document.getElementById("calendarTable").rows.namedItem(buttonDay).cells;
 
     chrome.storage.sync.get(['currButton'], function(result1) {
@@ -50,18 +49,11 @@ chrome.storage.sync.get(['year'], function(result) {
         {
             tableDay[updateMonth+1].getElementsByTagName("Button")[0].style.background = "#242714";
         }
-        else
-        {
-
-        }
-    
-        
     });
 
 
-
-     var urmum = document.querySelector("#title");
-     urmum.innerHTML = "Your " + result.year + "<br />" + "So Far";
+     var thisyear = document.querySelector("#title");
+     thisyear.innerHTML = "Your " + result.year + "<br>" + "So Far";
     
 
 });
