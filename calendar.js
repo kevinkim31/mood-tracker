@@ -57,8 +57,8 @@ chrome.storage.sync.get(['year'], function(result) {
     }
 
 
-    // var urmum = document.querySelector("#wuttest");
-    // urmum.innerHTML = "" + result.year;
+     var urmum = document.querySelector("#title");
+     urmum.innerHTML = "Your " + result.year + "<br />" + "So Far";
 
     var hello = document.getElementsByClassName(buttonMonth);
 
