@@ -1,12 +1,65 @@
 // DATE
-/*
+
+
 chrome.storage.sync.get(['year'], function(result) {
+
+    document.querySelector("#B1").addEventListener('click', ()=> {
+        
+        /*
+        var updateDate = new Date();
+        var updateYear = updateDate.getFullYear();
+        var updateMonth = updateDate.getMonth();
+        var updateDay = updateDate.getDate();
+
+        
+        if (updateYear == result.year)
+        {
+            window.location.href = 'calendar.html';
+            
+            var currButton = document.getElementById(updateDay).getElementsByClassName(updateMonth + 1);
+            currButton.style.bgcolor = '#9dc36c';
+    
+
+        }
+        */
+
+        chrome.storage.sync.set({currButton:1});
+        window.location.href = 'calendar.html';
+        
+
+   
+
+
+    });
+    
+    document.querySelector("#B2").addEventListener('click', ()=> {
+        window.location.href = 'calendar.html';
+        
+    });
+    
+    document.querySelector("#B3").addEventListener('click', ()=> {
+        window.location.href = 'calendar.html';
+    });
+    
+    document.querySelector("#B4").addEventListener('click', ()=> {
+        window.location.href = 'calendar.html';
+    });
+    
+    document.querySelector("#B5").addEventListener('click', ()=> {
+        window.location.href = 'calendar.html';
+    });
+
+
+    
+    // test
     var urmom = document.querySelector("#yeartest");
     urmom.innerHTML = "" + result.year;
+    
+    
 });
 
 // ON HOVER FUNCTION
-*/
+
 
 window.onload = function() {
     document.getElementById("B1").onmouseover = function() { hover1() };
@@ -23,27 +76,27 @@ window.onload = function() {
 
     function hover1() {
         document.getElementById("plant").src="assets/plant1.png";
-        document.getElementById("mood").innerHTML = "1";
+        document.getElementById("mood").innerHTML = "bless";
     }
 
     function hover2() {
         document.getElementById("plant").src="assets/plant2.png";
-        document.getElementById("mood").innerHTML = "2";
+        document.getElementById("mood").innerHTML = "fine";
     }
 
     function hover3() {
         document.getElementById("plant").src="assets/plant3.png";
-        document.getElementById("mood").innerHTML = "3";
+        document.getElementById("mood").innerHTML = "empty";
     }
 
     function hover4() {
         document.getElementById("plant").src="assets/plant4.png";
-        document.getElementById("mood").innerHTML = "4";
+        document.getElementById("mood").innerHTML = "upset";
     }
 
     function hover5() {
         document.getElementById("plant").src="assets/plant5.png";
-        document.getElementById("mood").innerHTML = "5";
+        document.getElementById("mood").innerHTML = "tragic";
     }
 
     function mouseout() {
@@ -51,4 +104,9 @@ window.onload = function() {
         document.getElementById("mood").innerHTML = "&nbsp;";
     }
 }
+
+
+
+
+
 
