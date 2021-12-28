@@ -32,17 +32,12 @@ chrome.storage.sync.get(['year'], function(result1) {
 
     });
 
+    // navigation button to calendar
     document.querySelector("#calendarpage").addEventListener('click', ()=> {
-
         window.location.href = 'calendar.html';
 
     });
-
-    // test
-    var urmom = document.querySelector("#yeartest");
-    urmom.innerHTML = "" + result1.year;
 });   
-
 
 // ON HOVER FUNCTION
 
