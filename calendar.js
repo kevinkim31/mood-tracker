@@ -55,5 +55,10 @@ chrome.storage.sync.get(['year'], function(result) {
      var thisyear = document.querySelector("#title");
      thisyear.innerHTML = "Your " + result.year + "<br>" + "So Far";
     
+    document.querySelector("#homepage").addEventListener('click', ()=> {
+
+        window.location.href = 'popup.html';
+
+    });
 
 });
