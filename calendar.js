@@ -63,7 +63,7 @@ chrome.storage.sync.get(['year'], function(result) {
     var hello = document.getElementsByClassName(buttonMonth);
 
     var test = document.querySelector("#wuttest");
-    test.innerHTML = buttonMonth;
+    //test.innerHTML = buttonMonth;
 
     var i;
 

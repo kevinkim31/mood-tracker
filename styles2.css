@@ -7,12 +7,12 @@ body {
 
 button {
     height: 12px;
-    width: 10px;
+    width: 5px;
     background-color: #dfe0dd;
     float: none;
     outline: none;
     border: none;
-    border-radius: 50%;
+    border-radius: 30%;
     margin: none;
     transition-duration: 0.7s;
 }
@@ -28,14 +28,20 @@ h2 {
 }
 
 div {
+    position: center;
     text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+tr, td {
+    padding: 0;
 }
 
 .disable {
     background-color: #b1bea1;
-}
-
-#chart {
-    columns: 13;
-    column-width: 12px;
 }
