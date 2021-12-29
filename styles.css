@@ -1,21 +1,20 @@
 body {
     background-color: #b1bea1;
     background-image: url("assets/home_background.png");
-    height: 545px;
+    height: 490px;
     width: 316px;
 }
 
 h2 {
     text-align: center;
     color: #35381d;
-    font-size: x-large;
+    font-size: large;
 }
 
 h3 {
     text-align: center;
     color: #35381d;
     margin: 0 auto;
-    font-size: large;
 }
 
 .B {
