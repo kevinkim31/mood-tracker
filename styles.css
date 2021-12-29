@@ -1,6 +1,6 @@
 body {
     background-color: #b1bea1;
-    height: 420px;
+    height: 550px;
     width: 316px;
 }
 
@@ -16,6 +16,7 @@ button.click{
 h2 {
     text-align: center;
     color: #35381d;
+    font-size: x-large;
 }
 
 h3 {
@@ -74,4 +75,10 @@ h3 {
     background-image: url("assets/calendar_icon.png");
     height: 22px;
     width: 22px;
+}
+
+#calendarnav {
+    position:relative;
+    margin-right: 3px;
+    bottom: 10px;
 }
