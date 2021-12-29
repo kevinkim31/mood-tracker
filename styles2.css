@@ -2,7 +2,7 @@ body {
     background-color: #b1bea1;
     background-image: url("assets/calendar_background.png");
     color: #35381d;
-    height: 510px;
+    height: 579px;
     width: 316px;
 }
 
@@ -74,3 +74,9 @@ tr, td {
     height: 22px;
     width: 22px;
 }   
+
+#return {
+    position:relative;
+    margin-right: 3px;
+    bottom: 8px;
+}
