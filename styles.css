@@ -1,16 +1,8 @@
 body {
     background-color: #b1bea1;
-    height: 550px;
+    background-image: url("assets/home_background.png");
+    height: 540px;
     width: 316px;
-}
-
-button:hover {
-    color: #f4f4f4;
-}
-
-button.click{
-    height: 0px;
-    width: 0px;
 }
 
 h2 {
@@ -23,6 +15,7 @@ h3 {
     text-align: center;
     color: #35381d;
     margin: 0 auto;
+    font-size: large;
 }
 
 .B {
@@ -69,16 +62,13 @@ h3 {
 
 #calendarnav {
     float: right;
+    position: relative;
+    margin-right: 3px;
+    bottom: 10px;
 }
 
 #calendarpage {
     background-image: url("assets/calendar_icon.png");
     height: 22px;
     width: 22px;
-}
-
-#calendarnav {
-    position:relative;
-    margin-right: 3px;
-    bottom: 10px;
 }

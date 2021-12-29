@@ -2,7 +2,7 @@ body {
     background-color: #b1bea1;
     background-image: url("assets/calendar_background.png");
     color: #35381d;
-    height: 579px;
+    height: 550px;
     width: 316px;
 }
 
@@ -17,8 +17,6 @@ button {
     margin: none;
     transition-duration: 0.7s;
 }
-
-
 
 button:hover {
     transform: scale(1.19);
