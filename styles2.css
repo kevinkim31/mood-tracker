@@ -4,6 +4,7 @@ body {
     color: #35381d;
     height: 545px;
     width: 316px;
+    overflow: hidden;
 }
 
 button {
