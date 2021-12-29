@@ -10,6 +10,7 @@ chrome.storage.sync.get(['year'], function(result) {
 
     if (!isLeap)
     {
+        document.querySelector("#FEB29").style.transitionDuration = "0s";
         document.querySelector("#FEB29").style.visibility= "hidden";
     }
 
@@ -56,3 +57,86 @@ chrome.storage.sync.get(['year'], function(result) {
     });
 
 });
+
+var onHover = document.querySelectorAll(".hover");
+
+for (var i = 0; i < onHover.length; i++)
+{
+    onHover[i].firstChild.addEventListener("mouseover", function(e){
+
+        document.querySelector("#hoverMood").innerHTML = "6969";
+
+        var currentButton = e.target;
+
+        var month = currentButton.id.subString(0,3);
+    
+        var day = currentButton.id.subString(3,5);
+
+        var m = 0;
+
+        var d = parseInt(day) - 1;
+
+        if (month==="JAN")
+        {
+            m = 0;
+        }
+        else if (month ==="FEB")
+        {
+            m = 1;
+        }
+        else if (month ==="MAR")
+        {
+            m = 2;
+        }
+        else if (month ==="APR")
+        {
+            m = 3;
+        }
+        else if (month ==="MAY")
+        {
+            m = 4;
+        }
+        else if (month ==="JUN")
+        {
+            m = 5;
+        }
+        else if (month ==="JUL")
+        {
+            m = 6;
+        }
+        else if (month ==="AUG")
+        {
+            m = 7;
+        }
+        else if (month ==="SEP")
+        {
+            m = 8;
+        }
+        else if (month ==="OCT")
+        {
+            m = 9;
+        }
+        else if (month ==="NOV")
+        {
+            m = 10;
+        }
+        else if (month ==="DEC")
+        {
+            m = 11;
+        }
+
+        chrome.storage.sync.get(['calendar'], function(result69) {
+
+            var mood = result69.calendar[m][d];
+            document.querySelector("#hoverMood").innerHTML = "" + mood;
+
+
+
+        }); 
+        
+        
+    
+    });
+
+}
+
