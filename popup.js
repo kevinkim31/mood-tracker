@@ -1,34 +1,119 @@
 // DATE
 chrome.storage.sync.get(['year'], function(result1) {
 
+
+    var updateDate = new Date();
+    var updateMonth = updateDate.getMonth();
+    var updateDay = updateDate.getDate();
+    var updateYear = updateDate.getFullYear();
+
+     
+    var theYear = result1.year;
+
+    if (updateYear != theYear)
+    {
+        chrome.storage.sync.set({year:updateYear});
+        const year = new Array(12);
+        var isLeap = (updateYear%400 == 0)||(updateYear%100 != 0 && updateYear%4 == 0);
+
+        year[0] = new Array(31);
+        if (isLeap)
+        {
+            year[1] = new Array(29);
+        }
+        else
+        {
+            year[1] = new Array(28);
+        }
+        year[2] = new Array(31);
+        year[3] = new Array(30);
+        year[4] = new Array(31);
+        year[5] = new Array(30);
+        year[6] = new Array(31);
+        year[7] = new Array(31);
+        year[8] = new Array(30);
+        year[9] = new Array(31);
+        year[10] = new Array(30);
+        year[11] = new Array(31);
+
+        chrome.storage.sync.set({calendar:year});
+    }
+        
+    
+
     document.querySelector("#B1").addEventListener('click', ()=> {
 
         chrome.storage.sync.set({currButton:1});
         window.location.href = 'calendar.html';
+        chrome.storage.sync.get(['calendar'], function(result2) {
+
+            var calUpdate = result2.calendar;
+            calUpdate[updateMonth][updateDay-1]=1;
+
+            chrome.storage.sync.set({calendar: calUpdate});
+
+
+        });
 
     });
     
     document.querySelector("#B2").addEventListener('click', ()=> {
         chrome.storage.sync.set({currButton:2});
         window.location.href = 'calendar.html';
+        chrome.storage.sync.get(['calendar'], function(result2) {
+
+            var calUpdate = result2.calendar;
+            calUpdate[updateMonth][updateDay-1]=2;
+
+            chrome.storage.sync.set({calendar: calUpdate});
+
+
+        });
         
     });
     
     document.querySelector("#B3").addEventListener('click', ()=> {
         chrome.storage.sync.set({currButton:3});
         window.location.href = 'calendar.html';
+        chrome.storage.sync.get(['calendar'], function(result2) {
+
+            var calUpdate = result2.calendar;
+            calUpdate[updateMonth][updateDay-1]=3;
+
+            chrome.storage.sync.set({calendar: calUpdate});
+
+
+        });
 
     });
     
     document.querySelector("#B4").addEventListener('click', ()=> {
         chrome.storage.sync.set({currButton:4});
         window.location.href = 'calendar.html';
+        chrome.storage.sync.get(['calendar'], function(result2) {
+
+            var calUpdate = result2.calendar;
+            calUpdate[updateMonth][updateDay-1]=4;
+
+            chrome.storage.sync.set({calendar: calUpdate});
+
+
+        });
 
     });
     
     document.querySelector("#B5").addEventListener('click', ()=> {
         chrome.storage.sync.set({currButton:5});
         window.location.href = 'calendar.html';
+        chrome.storage.sync.get(['calendar'], function(result2) {
+
+            var calUpdate = result2.calendar;
+            calUpdate[updateMonth][updateDay-1]=5;
+
+            chrome.storage.sync.set({calendar: calUpdate});
+
+
+        });
 
     });
 
