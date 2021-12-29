@@ -90,9 +90,29 @@ window.onload = function () {
                 var mood = result69.calendar[m][d];
                 
                 if (mood === null) {
-                    document.querySelector("#hoverMood").innerHTML = "Mood: N/A";
+                    document.querySelector("#hoverMood").innerHTML = "";
                 } else {
-                    document.querySelector("#hoverMood").innerHTML = "Mood: " + mood;
+                    if (mood == 1)
+                    {
+                        document.querySelector("#hoverMood").innerHTML = "Fantastic";
+                    }
+                    else if (mood == 2)
+                    {
+                        document.querySelector("#hoverMood").innerHTML = "Fine";
+                    }
+                    else if (mood == 3)
+                    {
+                        document.querySelector("#hoverMood").innerHTML = "Bored";
+                    }
+                    else if (mood == 4)
+                    {
+                        document.querySelector("#hoverMood").innerHTML = "Upset";
+                    }
+                    else if (mood == 5)
+                    {
+                        document.querySelector("#hoverMood").innerHTML = "Miserable ";
+                    }
+                    
                 }
                 
                 
@@ -100,8 +120,8 @@ window.onload = function () {
         });
         
         onHover[i].firstChild.onmouseout = function () {
-            document.querySelector("#hoverDate").innerHTML = "xx/xx";
-            document.querySelector("#hoverMood").innerHTML = "Mood: N/A";
+            document.querySelector("#hoverDate").innerHTML = "";
+            document.querySelector("#hoverMood").innerHTML = "";
         }
     }
 }
