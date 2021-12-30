@@ -11,6 +11,7 @@ You can download it on the Chrome Web Store [here](https://chrome.google.com/web
 
 ## Credits 
 Code by Kevin Kim, Jessica Chen, and Daniel Sun
+
 Art by Jessica Chen
 
 ## Contact
