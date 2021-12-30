@@ -13,8 +13,3 @@ You can download it on the Chrome Web Store [here](https://chrome.google.com/web
 Code by Kevin Kim, Jessica Chen, and Daniel Sun.
 
 Art by Jessica Chen.
-
-## Contact
-- [Kevin Kim](https://github.com/kevinkim31)
-- [Jessica Chen](https://github.com/aqvilala)
-- [Daniel Sun](https://github.com/UnripedBanana)
