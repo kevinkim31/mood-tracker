@@ -2,7 +2,7 @@ chrome.storage.sync.get(['year'], function(e) {
 
     // static variables
     var currentYear = e.year;
-    
+
     var updateDate = new Date();
     var updateMonth = updateDate.getMonth();
     var updateDay = updateDate.getDate();
@@ -124,7 +124,7 @@ chrome.storage.sync.get(['year'], function(e) {
     });
 
     // if user presses the calendar button, they are sent to the calendar page with no changes made to the mood
-    document.querySelector("#calendarpage").addEventListener('click', ()=> {
+    document.querySelector("#calendarbutton").addEventListener('click', ()=> {
 
         window.location.href = 'calendar.html';
 

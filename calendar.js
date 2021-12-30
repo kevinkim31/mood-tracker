@@ -46,7 +46,7 @@ chrome.storage.sync.get(['year'], function () {
     thisyear.innerHTML = "Your " + "<br>" + updateYear + "<br>" + "So Far";
 
     // if user presses the home button, they are sent back to the homepage
-    document.querySelector("#homepage").addEventListener('click', () => {
+    document.querySelector("#homebutton").addEventListener('click', () => {
 
         window.location.href = 'popup.html';
 
@@ -69,7 +69,7 @@ window.onload = function () {
             var m = 0;
             var d = parseInt(day) - 1;
             
-            document.querySelector("#hoverDate").innerHTML = month[0] + month.substring(1).toLowerCase() + " " + day;
+            document.querySelector("#hoverdate").innerHTML = month[0] + month.substring(1).toLowerCase() + " " + day;
             
             if (month === "JAN") {
                 m = 0;
@@ -113,28 +113,28 @@ window.onload = function () {
                 var mood = f.calendar[m][d];
                 
                 if (mood === null) {
-                    document.querySelector("#hoverMood").innerHTML = "";
+                    document.querySelector("#hovermood").innerHTML = "";
                 }
                 else {
                     if (mood == 1)
                     {
-                        document.querySelector("#hoverMood").innerHTML = "Fantastic";
+                        document.querySelector("#hovermood").innerHTML = "Fantastic";
                     }
                     else if (mood == 2)
                     {
-                        document.querySelector("#hoverMood").innerHTML = "Fine";
+                        document.querySelector("#hovermood").innerHTML = "Fine";
                     }
                     else if (mood == 3)
                     {
-                        document.querySelector("#hoverMood").innerHTML = "Bored";
+                        document.querySelector("#hovermood").innerHTML = "Bored";
                     }
                     else if (mood == 4)
                     {
-                        document.querySelector("#hoverMood").innerHTML = "Upset";
+                        document.querySelector("#hovermood").innerHTML = "Upset";
                     }
                     else if (mood == 5)
                     {
-                        document.querySelector("#hoverMood").innerHTML = "Miserable";
+                        document.querySelector("#hovermood").innerHTML = "Miserable";
                     }
                 }
             });
@@ -142,8 +142,8 @@ window.onload = function () {
         
         // reverts back to empty when user is not hovering the button anymore
         onHover[i].firstChild.onmouseout = function () {
-            document.querySelector("#hoverDate").innerHTML = "";
-            document.querySelector("#hoverMood").innerHTML = "";
+            document.querySelector("#hoverdate").innerHTML = "";
+            document.querySelector("#hovermood").innerHTML = "";
         }
     }
 }
