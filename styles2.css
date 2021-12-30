@@ -69,7 +69,7 @@ tr, td {
 }
 
 #homepage {
+    background-image: url("assets/home_icon.png");
     height: 22px;
     width: 22px;
-    text-align: center;
 }   
