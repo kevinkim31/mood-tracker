@@ -71,7 +71,7 @@ h3 {
 }
 
 #calendarpage {
-    background-color: #d3e2c3;
+    background-image: url("assets/calendar_icon.png");
     height: 22px;
     width: 22px;
 }
