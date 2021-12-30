@@ -2,7 +2,7 @@
 A Google Chrome extension that allows you to keep track of your mood each day and visualize your daily progress throughout the year.
 
 ## Installation 
-You can download it on the Chrome Web Store [here](https://chrome.google.com/webstore/category/extensions).
+You can download it on the Chrome Web Store [here](https://chrome.google.com/webstore/detail/sprout/ipmihjijikhlbkihpcjbahbfpnlbihmk).
 
 ## How to use 
 1. Click on one of the five buttons which each represent a different mood.
