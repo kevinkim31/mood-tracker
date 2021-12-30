@@ -10,6 +10,7 @@
         transform: rotateX(0);
     }
 }
+
 body {
     animation: transitionIn 1s;
     background-color: #b1bea1;
@@ -69,27 +70,23 @@ tr, td {
     background-color: #b1bea1;
 }
 
-#hoverDate {
+#hoverdate {
     font-size: medium;
 }
 
-#hoverMood {
+#hovermood {
     font-size: small;
 }
 
-#return {
+#homenav {
     text-align: center;
-}
-
-#homepage {
-    background-image: url("assets/home_icon.png");
-    height: 22px;
-    width: 22px;
-}   
-
-#return {
-    position:relative;
+    position: relative;
     margin-right: 3px;
     bottom: 0px;
 }
 
+#homebutton {
+    background-image: url("assets/home_icon.png");
+    height: 22px;
+    width: 22px;
+}

@@ -1,8 +1,13 @@
-// DATE
+// the year structure is created and stored in chrome storage on install
+// this prevents the complete erasure of the array by accident
+
 chrome.runtime.onInstalled.addListener (() => {
+
     var currDate = new Date();
     var currYear = currDate.getFullYear();
+
     chrome.storage.sync.set({year:currYear});
+
     const year = new Array(12);
 
     year[0] = new Array(31);
@@ -19,6 +24,4 @@ chrome.runtime.onInstalled.addListener (() => {
     year[11] = new Array(31);
 
     chrome.storage.sync.set({calendar:year});
-
-   
 });
