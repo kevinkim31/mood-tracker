@@ -3,7 +3,7 @@
 
 # What is this
 
-- A chrome extension that allows you to keep track of your mood each day and visualize daily progress throughout the year in the form of a calendar.
+- A chrome extension that allows you to keep track of your mood each day and visualize daily progress throughout the year.
 
 # How to use
 
